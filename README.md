@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+<h1 align="center">
+  <img  alt="LogoEwally" src = "![logoMaximaBank](https://user-images.githubusercontent.com/42298239/177549026-5591fefd-4a33-4355-aac7-167bc182a80d.svg)"/>
+  <br>
+  Desafio MaximaBank
+  <h3 align="center">Aplicação conta bancária</h3>
+  <br>
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## :rocket: Tecnologias
 
-## Available Scripts
- 
-In the project directory, you can run:da
+Projeto desenvolvido utilizando as seguintes tecnologias:
 
-### `yarn start`
+- React
+- Typescript
+- ContextApi
+- Styled-componentes
+- Prisma
+- Express
+- JWT
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## :clipboard: O Desafio da Aplicação
 
-### `yarn test`
+Aplicação Simulando uma conta bancária.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O Desafio consistia em escrever uma Aplicação FrontEnd em React e BankEnd em NodeJS simulando uma conta bancária:
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :information_source: Como utilizar a aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para clonar e rodar a aplicação, você precisará do [Git](https://git-scm.com), Node.js v16.16 ou superior + Npm v8.1;
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+FrontEnd
+# Clone este repositório
+$ git clone https://github.com/martinsalmeida/maximabankfrontend.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Entre no repositório maximabankfrontend e instale as dependências
+$ cd maximabankfrontend
+$ npm install
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Para rodar o localmente:
+$ npm start
 
-## Learn More
+# Acesse o endereço:
+$ http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+BackEnd
+# Clone este repositório
+$ git clone https://github.com/martinsalmeida/maximabankbackend.git
+
+# Entre no repositório maximabankbackend e instale as dependências
+$ cd maximabankbackend
+$ npm install
+
+# É necessário alterar no arquivo .env as credencias no banco Postgres
+DATABASE_URL="postgresql://NOMEDOUSUARIO:SENHADOBANDO@localhost:5432/NOMEDOBANCO?schema=public"
+
+# Rode as migrations do Prisma ORM para gerar as tabelas 
+$ npx prisma migrate dev
+
+# Para rodar localmente o backend:
+$ npm run dev
+
+```
