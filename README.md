@@ -1,5 +1,6 @@
 <h1 align="center">
-  <img  alt="LogoEwally" src = "![logoMaximaBank](https://user-images.githubusercontent.com/42298239/177549026-5591fefd-4a33-4355-aac7-167bc182a80d.svg)"/>
+  <img  alt="MaximaBank" src = "https://user-images.githubusercontent.com/42298239/177552606-f319b543-a080-4530-8019-3daaff1ee367.svg")
+/>
   <br>
   Desafio MaximaBank
   <h3 align="center">Aplicação conta bancária</h3>
